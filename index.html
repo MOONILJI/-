@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지역거주실 업무인수인계</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>지역거주실 업무인수인계</h1>
+    </header>
+
+    <main>
+        <!-- 년/월 선택 -->
+        <section id="date-picker">
+            <button id="prev-month-btn">이전 월</button>
+            <span id="month-year">2025년 1월</span>
+            <button id="next-month-btn">다음 월</button>
+        </section>
+
+        <!-- 달력 -->
+        <section id="calendar">
+            <h2>선택한 월의 달력</h2>
+            <div id="calendar-container"></div>
+        </section>
+
+        <!-- 인수인계 섹션 -->
+        <section id="handover">
+            <h2 id="handover-title">해당 날짜 / 인수인계</h2>
+            <table id="handover-content">
+                <!-- 항목이 동적으로 추가됩니다 -->
+            </table>
+        </section>
+
+        <!-- 엑셀 다운로드 버튼 -->
+        <button id="download-btn">엑셀로 다운로드</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
